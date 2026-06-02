@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account – Hamro Khataa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 24px 16px 60px;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    .logo { font-size: 26px; font-weight: 800; color: #ffffff; margin-bottom: 4px; }
+    .logo span { color: #81C784; }
+    .tagline { font-size: 13px; color: #888; margin-bottom: 40px; }
+    h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    h2 { font-size: 16px; font-weight: 700; color: #fff; margin: 28px 0 10px; }
+    p { font-size: 15px; color: #bbb; margin-bottom: 12px; }
+    .card {
+      background: #1e1e22;
+      border: 1px solid #2a2a2e;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    ol, ul { padding-left: 20px; color: #bbb; font-size: 15px; }
+    li { margin-bottom: 8px; }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .deleted { background: #EF535020; color: #EF5350; }
+    .kept   { background: #81C78420; color: #81C784; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 10px; }
+    th { text-align: left; color: #888; font-weight: 600; padding: 8px 0; border-bottom: 1px solid #2a2a2e; }
+    td { padding: 10px 0; border-bottom: 1px solid #1a1a1e; color: #bbb; vertical-align: top; }
+    td:first-child { color: #fff; width: 45%; }
+    a { color: #81C784; }
+    .warning {
+      background: #EF535012;
+      border: 1px solid #EF535030;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #EF5350;
+      margin: 20px 0;
+    }
+    footer { margin-top: 48px; font-size: 12px; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">Hamro <span>Khataa</span></div>
+    <div class="tagline">हाम्रो खाता · Digital Ledger for Shopkeepers</div>
+
+    <h1>Account &amp; Data Deletion</h1>
+    <p>
+      You can delete your Hamro Khataa account and all associated data directly
+      from within the app at any time. No form or email is required.
+    </p>
+
+    <div class="warning">
+      ⚠️ Account deletion is permanent and cannot be undone.
+    </div>
+
+    <h2>How to Delete Your Account In-App</h2>
+    <div class="card">
+      <ol>
+        <li>Open <strong>Hamro Khataa</strong> on your device.</li>
+        <li>Tap the <strong>Settings ⚙️</strong> icon in the top-right corner of the dashboard.</li>
+        <li>Scroll down and tap <strong>Delete Account</strong>.</li>
+        <li>Read the confirmation message and tap <strong>Delete</strong>.</li>
+        <li>You will be asked to sign in with Google once more to confirm your identity.</li>
+        <li>Your account and all data will be permanently deleted immediately.</li>
+      </ol>
+    </div>
+
+    <h2>What Data Is Deleted</h2>
+    <div class="card">
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Storage Location</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Customer records</td>
+          <td>Device (SQLite) &amp; Cloud (Firestore)</td>
+          <td><span class="badge deleted">Permanently deleted</span></td>
+        </tr>
+        <tr>
+          <td>Transaction records</td>
+          <td>Device (SQLite) &amp; Cloud (Firestore)</td>
+          <td><span class="badge deleted">Permanently deleted</span></td>
+        </tr>
+        <tr>
+          <td>Firebase Auth account</td>
+          <td>Firebase Authentication</td>
+          <td><span class="badge deleted">Permanently deleted</span></td>
+        </tr>
+        <tr>
+          <td>App preferences (theme, shop name)</td>
+          <td>Device (SharedPreferences)</td>
+          <td><span class="badge deleted">Permanently deleted</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Data Retention</h2>
+    <p>
+      We do not retain any personal data after account deletion. All data is
+      removed immediately upon confirmation. There is no retention period.
+    </p>
+
+    <h2>Can't Access the App?</h2>
+    <p>
+      If you are unable to access the app to delete your account, contact us
+      and we will manually delete your data within 30 days:
+    </p>
+    <p><a href="mailto:ankitdiyaloffical@gmail.com">ankitdiyaloffical@gmail.com</a></p>
+
+    <footer>
+      &copy; 2024 Hamro Khataa &nbsp;·&nbsp;
+      Last updated: June 2025
+    </footer>
+
+  </div>
+</body>
+</html>
