@@ -24,7 +24,7 @@
       <div class="page-header">
         <img src="logo.png" alt="Hamro Khataa logo" />
         <h1>Privacy Policy</h1>
-        <div class="updated">Last updated: July 2026</div>
+        <div class="updated">Last updated: October 2026</div>
       </div>
 
       <p class="intro">
@@ -50,6 +50,14 @@
             Firestore.
           </li>
           <li>
+            <strong>Personal Expense Data</strong> - If you use the optional
+            personal income/expense tracker (including any payment
+            methods/wallets you create), that data is stored locally on your
+            device using SQLite only. It is never uploaded to Firebase or any
+            server, for guest and Google Sign-In users alike, and is not
+            included in the cloud backup described in section 3.
+          </li>
+          <li>
             <strong>Device Token</strong> - When you grant notification
             permission, we collect a Firebase Cloud Messaging (FCM) device token
             to deliver in-app push notifications. This token is not linked to
@@ -69,7 +77,13 @@
         <ul>
           <li>Display your ledger and transaction history within the app</li>
           <li>
-            Sync and back up your data to Firebase (Google Sign-In users only)
+            Sync and back up your business/ledger data to Firebase (Google
+            Sign-In users only)
+          </li>
+          <li>
+            Display your personal income/expense tracker and payment methods
+            entirely on-device - this data is never synced or backed up to the
+            cloud
           </li>
           <li>Identify your account across devices</li>
           <li>Send push notifications relevant to the app (e.g. reminders)</li>
@@ -90,6 +104,11 @@
           account.
         </p>
         <p>
+          Your personal income/expense tracker and payment methods/wallets (see
+          section 1) are stored locally only and are never part of this cloud
+          backup, by design.
+        </p>
+        <p>
           We do not store payment card information or financial credentials of
           any kind.
         </p>
@@ -98,15 +117,19 @@
       <section class="legal-section">
         <h2>4. Cross-Border Data Transfer</h2>
         <p>
-          By using Firebase services, your data (for Google Sign-In users) may
-          be transferred to and stored on servers located outside Nepal,
-          including in the United States, where Google LLC operates its
-          infrastructure.
+          By using Firebase services, your business/ledger data (for Google
+          Sign-In users) may be transferred to and stored on servers located
+          outside Nepal, including in the United States, where Google LLC
+          operates its infrastructure.
         </p>
         <p>
           This transfer is necessary to provide cloud sync and backup
           functionality. Google's data handling is governed by its own Privacy
           Policy and complies with international data protection standards.
+        </p>
+        <p>
+          Your personal income/expense tracker data never leaves your device,
+          so no cross-border transfer applies to it.
         </p>
       </section>
 
@@ -149,6 +172,12 @@
           Cloud data in Firebase Firestore is retained until you submit a
           deletion request. Upon a verified deletion request, your Firestore
           data will be permanently removed within 30 days.
+        </p>
+        <p>
+          Your personal income/expense tracker data (see section 1) exists only
+          on your device, so it is retained only until you uninstall the app or
+          delete it within the app - there is no separate cloud deletion
+          request to make for it.
         </p>
         <p>
           Note: Uninstalling the app removes local data only. Firebase cloud
