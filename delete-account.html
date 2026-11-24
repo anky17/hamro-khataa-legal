@@ -87,8 +87,13 @@
               <td><span class="badge deleted">Permanently deleted</span></td>
             </tr>
             <tr>
-              <td>Transaction records</td>
-              <td>Device (SQLite) &amp; Cloud (Firestore)</td>
+              <td>Transaction records &amp; receipt photos</td>
+              <td>Device (SQLite &amp; local storage) &amp; Cloud (Firestore)</td>
+              <td><span class="badge deleted">Permanently deleted</span></td>
+            </tr>
+            <tr>
+              <td>Personal Mode entries (expenses, income, wallets, budgets)</td>
+              <td>Device (SQLite &amp; SharedPreferences)</td>
               <td><span class="badge deleted">Permanently deleted</span></td>
             </tr>
             <tr>
@@ -97,12 +102,15 @@
               <td><span class="badge deleted">Permanently deleted</span></td>
             </tr>
             <tr>
-              <td>App preferences (theme, language)</td>
+              <td>App preferences &amp; configurations (theme, language, mode)</td>
               <td>Device (SharedPreferences)</td>
               <td><span class="badge deleted">Permanently deleted</span></td>
             </tr>
           </table>
         </div>
+        <p style="margin-top: 14px; font-size: 0.9em; color: var(--text-muted);">
+          <em>Note:</em> Any local backup files (<kbd>.hkbackup</kbd>) previously exported to external device folders (such as Downloads or external drives) must be deleted manually through your device file manager.
+        </p>
       </section>
 
       <section class="legal-section">

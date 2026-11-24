@@ -24,7 +24,7 @@
       <div class="page-header">
         <img src="logo.png" alt="Hamro Khataa logo" />
         <h1>Terms &amp; Conditions</h1>
-        <div class="updated">Last updated: October 2026</div>
+        <div class="updated">Last updated: November 2026</div>
       </div>
 
       <p class="intro">
@@ -46,22 +46,37 @@
       <section class="legal-section">
         <h2>2. Description of Service</h2>
         <p>
-          Hamro Khataa is a personal ledger application that helps small
-          shopkeepers in Nepal track credit given to customers (Udharo) and cash
-          received (Jama). The app stores data locally on your device and
-          optionally syncs to the cloud for Google Sign-In users.
+          Hamro Khataa provides an offline-first bookkeeping and financial
+          management application offering two distinct operational modes:
         </p>
+        <ul>
+          <li>
+            <strong>Shop Mode:</strong> A digital ledger designed for shopkeepers
+            and small businesses to track credit given to customers (Udharo), cash
+            received (Jama), attach transaction proof photos, generate customer
+            PDF statements, and schedule payment reminders. Data is stored locally
+            via SQLite and, for authenticated Google Sign-In users, backed up to
+            Firebase Firestore cloud storage.
+          </li>
+          <li>
+            <strong>Personal Mode:</strong> A private, offline personal finance
+            tracker allowing users to record personal income and expenses, manage
+            multiple payment methods/wallets, set monthly budgets and category
+            spending limits, calculate daily "Safe to Spend" allowances, and view
+            weekly and 30-day spending summaries. All personal mode data is stored
+            strictly on your device and is never synced to the cloud.
+          </li>
+          <li>
+            <strong>On-Device Backup &amp; Restore:</strong> Users can manually
+            export a complete on-device backup archive (<kbd>.hkbackup</kbd>)
+            containing their local databases, personal configurations, and
+            receipt photos, and restore from this file on the same or another
+            device.
+          </li>
+        </ul>
         <p>
-          The app also includes an optional personal income/expense tracker,
-          with payment methods/wallets you can create, for users who want to
-          track personal finances separately from their business ledger. This
-          personal expense data is stored locally on your device only and is
-          never synced to the cloud, regardless of whether you are signed in
-          with Google or using a guest account.
-        </p>
-        <p>
-          The app may also deliver in-app announcements, tips, and update
-          notices via Firebase.
+          The app may also deliver push notification reminders and in-app
+          announcements, tips, or update notices via Firebase.
         </p>
       </section>
 
@@ -69,35 +84,45 @@
         <h2>3. User Responsibilities</h2>
         <p>You are responsible for:</p>
         <ul>
-          <li>Maintaining the accuracy of all data you enter into the app</li>
-          <li>Keeping your device, Google account, and app access secure</li>
+          <li>Maintaining the accuracy of all ledger entries, customer data, and amounts you record</li>
+          <li>Keeping your device, Google account credentials, and app access secure</li>
           <li>
-            Any business decisions or transactions made based on data in the app
+            Safely storing, managing, and securing any on-device backup files
+            (<kbd>.hkbackup</kbd>) that you export or share
           </li>
           <li>
-            Ensuring you have the consent of any individual whose data you
-            record
+            Reviewing and confirming any messages or statements before sharing
+            them with customers via external platforms such as WhatsApp
+          </li>
+          <li>
+            Any commercial decisions, credit agreements, or transactions made
+            based on data recorded in the app
+          </li>
+          <li>
+            Ensuring you have the lawful consent of any customer or individual
+            whose contact details you enter or pick from your address book
           </li>
         </ul>
         <p>
           Hamro Khataa is a record-keeping tool only. It does not constitute
-          financial, legal, or accounting advice.
+          financial, legal, tax, or accounting advice.
         </p>
       </section>
 
       <section class="legal-section">
         <h2>4. Data Ownership</h2>
         <p>
-          All business data you enter into Hamro Khataa, including customer
-          names, phone numbers, and transaction records, belongs solely to you.
-          This also applies to any personal income/expense entries and payment
-          methods you record in the personal expense tracker. We do not claim
-          any ownership over your data.
+          All business and financial data you enter into Hamro Khataa—including
+          customer names, phone numbers, transaction records, attached receipt
+          photos, personal income/expense entries, budgets, and wallets—belongs
+          solely to you. We do not claim any ownership over your data.
         </p>
         <p>
-          You are solely responsible for maintaining independent backups of
-          critical business records. We are not liable for data loss due to
-          device failure, accidental deletion, or app errors.
+          You are solely responsible for maintaining regular backups of your
+          records (via Google Cloud sync in Shop Mode or manual on-device
+          <kbd>.hkbackup</kbd> exports). While we implement safeguards, we are
+          not liable for data loss caused by hardware failure, device damage,
+          accidental deletion, or operating system issues.
         </p>
       </section>
 
